@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <label for="cars">Choose a car:</label>
+
+    <select name="cars" id="cars" onchange="dajOpisZaOdabir()">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <h1 id="rezultatOdabira"></h1>
+    <h2>Bomb game</h2>
+    <button onclick="odbrojavaj()">Aktiviraj bombu</button>
+    <h4 id="timer"></h4>
+
+    <hr />
+    <p>Ovo je lista uspijeha učenika</p>
+    <ul>
+      <li>Ivan 5</li>
+      <li>Ivona 2</li>
+      <li>Marko 3</li>
+      <li>Stjepan 1</li>
+      <li>Antun 1</li>
+      <li>Franjo 5</li>
+    </ul>
+    <input id="trazenaOcjena" type="number" min="1" max="5" />
+    <button onclick="filtrirajUcenike()">
+      Filtriraj učenike u odnosu na ocijenu
+    </button>
+    <ul id="filtriraniUcenici"></ul>
+  </body>
+</html>
